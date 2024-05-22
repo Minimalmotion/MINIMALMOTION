@@ -26,18 +26,23 @@ justify-content: center;
 align-items: center;
 
 }
+.home:hover{
+  animation-play-state: paused; /* Pausar la animación cuando se hace hover */
+}
 .home{
+  transition: transform 0.5s ease; /* Transición suave para la rotación */
+  animation: rotate 3s linear infinite; /* Animación de rotación infinita */
 position: fixed;
+
 }
 .home>a>img{
   height: 10vh; 
 }
 
-video{
-  height: auto;
-  width: 100vw;
-}
 
+.home{
+  height: auto;
+}
 
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
@@ -68,3 +73,15 @@ body, html {
     color: white;
     font-family: Arial, sans-serif;
   }
+
+  @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+a {
+    display: inline-block;
+}
