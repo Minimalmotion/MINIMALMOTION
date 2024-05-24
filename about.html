@@ -1,30 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MINIMAL MOTION</title>
     <link rel="shortcut icon" href="/img/LOGOTIPO_MINIMALMOTION_BLANCO.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Gudea:ital,wght@0,400;0,700;1,400&family=Mitr:wght@200;300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/about.css">
+    
+
 </head>
+
 <body>
     <header class="headerabout">
-       <a href="/home.html"> <img src="/img/LOGOTIPO_MINIMALMOTION_NEGRO.png" alt=""></a>
-       <div id="logo-button" class="logo">
-        <img src="/img/ISOTIPO_MINIMALMOTION_NEGRO.png" alt="Logo">
+        <a href="/home.html"> <img src="/img/LOGOTIPO_MINIMALMOTION_NEGRO.png" alt="" id="logoinvert"></a>
+        <div id="logo-button" class="logo">
+            <img src="/img/ISOTIPO_MINIMALMOTION_NEGRO.png" alt="Logo">
         </div>
     </header>
-     <!-- Menú desplegable -->
-     <div id="dropdown-menu" class="menu">
-        <a href="#projects">Quiénes somos</a>
-        <a href="#about">Proyectos</a>
+    <!-- Menú desplegable -->
+    <div id="dropdown-menu" class="menu">
+        <a href="/about.html">Quiénes somos</a>
+        <a href="/proyectos.html">Proyectos</a>
         <a href="#contact">Contacto</a>
         <a href="#blog">Blog</a>
         <a href="#shop">Tienda</a>
     </div>
-    <div class="quienessomos">
-    <h1>¡Hola!</h1>
-</div>
-<script src="/js/about.js"></script>
+
+
+    <main class="container1">
+
+        <div class="videosticky">
+            <video autoplay muted playsinline loop id="videoabout">
+                <source src="/vid/videoabout.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="quienessomos">
+            <h1>¡Hola!</h1>
+            <br>
+            <h2>Somos un estudio audiovisual en busca de la conexión entre música y visión.</h2>
+        </div>
+        <section class="info">
+            <video autoplay muted playsinline loop id="videoabout2">
+                <source src="/vid/videoabouit2.mp4" type="video/mp4">
+            </video>
+            <div class="txtinfo">
+                <h3>Desde <strong class="customstrong">Minimal Motion</strong> nos urge la necesidad de buscar la conexión entre música y visión apoyándonos
+                    de las nuevas tecnologías para generar audiovisuales reactivos a la música. </h3>
+                <br>
+                <h3>Nuestro <strong class="customstrong">estilo </strong > es muy marcado y nos basamos en formas simples para eventualmente
+                    generar imágenes complejas. De ahí el nombre Minimal Motion.</h3>
+                <br>
+                <h3>Nuestro <strong class="customstrong">objetivo </strong> es generar interés en estos visuales y explorar juntos diferentes
+                    estilos de música y su realcón con la forma. No tienen por que ser minimalistas todas las canciones
+                    y muestras pero sí tienen que tener rasgos minimalistas. Nos fijamos sobre todo en <strong class="customstrong">la
+                        ausencia de
+                        instrumentos, la repetición y el mensaje que aporta y connota la canción.</strong></h3>
+                <br>
+                <h3>Nuestra <strong class="customstrong">presencia </strong> reside por el momento en los medios digitales. Ya sea Instagram,
+                    TikTok o Youtube. La intención es algún día llevar nuestros visuales a diferentes eventos
+                    interactivos para hacer de esto una experiencia inolvidable para el espectador.</h3>
+                <br>
+                <h3>Nuestra <strong class="customstrong"> forma de trabajar </strong> se basa en experimentar dicha conexión sonido-forma y
+                    recibir opiniones sobre ellos para conocer la experiencia de cada uno, y si se ajusta a las
+                    percepciones visuales del individuo.</h3>
+                <br>
+                <a href="/proyectos.html"><button type="button" class="btn btn-primary"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+  Proyectos
+</button></a>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+    <script src="/js/about.js"></script>
 </body>
+
 </html>

@@ -36,7 +36,7 @@ align-items: center;
   animation: rotate 3s linear infinite; /* Animación de rotación infinita */
 position: fixed;
 z-index: 1;
-margin-bottom: 8em;
+margin-bottom: 18em;
 
 }
 .home>a>img{

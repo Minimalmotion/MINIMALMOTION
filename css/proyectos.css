@@ -1,0 +1,133 @@
+* {
+    background-color: black;
+    font-family: 'Dunbarlow', sans-serif;
+    cursor: url('/img/cursorblanco.png'), auto;
+    /* Aquí se añade el cursor personalizado */
+    margin: 0%;
+    max-width: 100vw;
+
+  
+  }
+  img{
+    cursor: pointer;
+    /* Cambia el cursor a su estado original sobre cualquier enlace */
+  }
+  a{
+    cursor: pointer;
+    /* Cambia el cursor a su estado original sobre cualquier enlace */
+  }
+
+  header {
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%, rgba(255, 255, 255, 0) 60%);
+  position: -webkit-sticky;
+  /* Soporte para Safari */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 12vh;
+  z-index: 1000;
+
+}
+
+.headerabout {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  height: 9vh;
+
+
+}
+
+
+.headerabout>a {
+  display: flex;
+  justify-content: center;
+
+}
+
+.headerabout>a>img {
+  height: 5vh;
+}
+
+  #logo-button {
+    position: fixed;
+    bottom: 20px;
+    /* Ajusta según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  #logo-button img {
+    width: 100px;
+    /* Ajusta según sea necesario */
+    animation: rotate 3s linear infinite;
+    /* Animación de rotación infinita */
+    z-index: 1;
+    transition: transform 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Blanco semi-transparente */
+    border-radius: 100%;
+    /* Hace que el div sea un círculo */
+    
+  
+  }
+  
+  #logo-button:hover img {
+    animation-play-state: paused;
+    /* Pausar la animación cuando se hace hover */
+  
+  }
+
+  .menu {
+    display: flex;
+    position: fixed;
+    bottom: 0em;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .menu a {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    text-decoration: none;
+    margin: 10px 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    font-weight: bolder;
+  }
+  
+  .menu.show {
+    transform: translateX(-50%) translateY(-80%);
+  
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  a {
+    display: inline-block;
+  }
