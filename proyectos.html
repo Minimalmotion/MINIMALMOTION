@@ -5,21 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MINIMAL MOTION</title>
-    <link rel="shortcut icon" href="/img/LOGOTIPO_MINIMALMOTION_BLANCO.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/ISOTIPO_MINIMALMOTION_BLANCO.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Gudea:ital,wght@0,400;0,700;1,400&family=Mitr:wght@200;300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Gudea:ital,wght@0,400;0,700;1,400&family=Mitr:wght@200;300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/proyectos.css">
-    
-
 </head>
 
 <body>
     <header class="headerabout">
-        <a href="/home.html"> <img src="/img/LOGOTIPO_MINIMALMOTION_blanco.png" alt="" ></a>
+        <a href="/home.html"> <img src="/img/LOGOTIPO_MINIMALMOTION_blanco.png" alt="" id="logoinvert"></a>
         <div id="logo-button" class="logo">
             <img src="/img/ISOTIPO_MINIMALMOTION_BLANCO.png" alt="Logo">
         </div>
@@ -28,22 +25,125 @@
     <div id="dropdown-menu" class="menu">
         <a href="/about.html">Quiénes somos</a>
         <a href="/proyectos.html">Proyectos</a>
-        <a href="#contact">Contacto</a>
-        <a href="#blog">Blog</a>
-        <a href="#shop">Tienda</a>
+        <a href="/Contacto.html">Contacto</a>
+        <a href="/Blog.html">Blog</a>
+        <a href="/Tienda.html">Tienda</a>
+    </div>
+  <div class="txtproyectos">
+    <h1>Sound Studies // Estudios de Sonido</h1>
+  </div>
+    <!-- Primer Carrusel de Videos -->
+    <div id="videoCarousel1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#videoCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#videoCarousel1" data-slide-to="1"></li>
+            <li data-target="#videoCarousel1" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video src="/vid/Proyectos/SOUND STUDY 1.mp4" autoplay muted loop onclick="showModal(this)" data-info="Sound Study #1"></video>
+            </div>
+            <div class="carousel-item">
+                <video src="/vid/Proyectos/SOUND STUDIES2.mp4" autoplay muted loop onclick="showModal(this)" data-info="Sound Study #2"></video>
+            </div>
+            <div class="carousel-item">
+                <video src="/vid/Proyectos/SOUND STUDIES5.mp4" autoplay muted loop onclick="showModal(this)" data-info="Sound Study #3"></video>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#videoCarousel1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#videoCarousel1" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+    <div class="txtproyectos">
+        <h1>Music Studies // Estudios de Música</h1>
+      </div>
+    <!-- Segundo Carrusel de Videos -->
+    <div id="videoCarousel2" class="carousel slide mt-5" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#videoCarousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#videoCarousel2" data-slide-to="1"></li>
+            <li data-target="#videoCarousel2" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video src="/vid/Proyectos/MUSIC STUDY 1.mp4" autoplay muted loop onclick="showModal(this)" data-info="Music Study #1
+                Subtle // QubeSounds"></video>
+            </div>
+            <div class="carousel-item">
+                <video src="/vid/Proyectos/MUSIC STUDY 3.mp4" autoplay muted loop onclick="showModal(this)" data-info="Music Study #2"></video>
+            </div>
+            <div class="carousel-item">
+                <video src="/vid/Proyectos/MUSIC STUDY 4.mp4" autoplay muted loop onclick="showModal(this)" data-info="Music Study #3"></video>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#videoCarousel2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#videoCarousel2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+             
+                <div class="modal-body">
+                    <video id="modalVideo" controls></video>
+                    <p id="videoInfo"></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <main class="container1">
+  <!-- footer -->
+  <footer>
+    <h1>Innovación visual al compás de la música</h1>
+    <br>
+    <hr>
+    <li>
+        <u> <img src="/img/icons8-instagram-24.png" alt="">
+            <h5>@MinimalMotion_</h5>
+        </u>
+        <u><img src="/img/icons8-tik-tok-50.png" alt="">
+            <h5>@MinimalMotion_</h5>
+        </u>
+        <u><img src="/img/icons8-youtube-24.png" alt="">
+            <h5>@MinimalMotion_</h5>
+        </u>
+        <u><img src="/img/icons8-correo-24.png" alt="">
+            <h5>minimal.motion.contact@gmail.com</h5>
+        </u>
+        <u><img src="/img/icons8-teléfono-24.png" alt="">
+            <h5>+34 689 303 758</h5>
+        </u>
 
-        
+    </li>
+    <div class="footer">
+        <div>
+            <div class="containerfoot">
+
+            </div>
+            <div class="containerfoot">
 
 
 
-    </main>
+            </div>
+
+        </div>
+    </div>
+</footer>
 
 
-    <script src="/js/about.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/proyectos.js"></script>
 </body>
 
 </html>

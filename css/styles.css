@@ -24,6 +24,7 @@ header>img{
 display: flex;
 justify-content: center;
 align-items: center;
+height: 100vh;
 
 }
 .home:hover{
@@ -36,7 +37,7 @@ align-items: center;
   animation: rotate 3s linear infinite; /* Animación de rotación infinita */
 position: fixed;
 z-index: 1;
-margin-bottom: 18em;
+
 
 }
 .home>a>img{
@@ -49,7 +50,7 @@ margin-bottom: 18em;
 }
 
 /* Style the video: 100% width and height to cover the entire window */
-#myVideo {
+#videohome {
   position: fixed;
   right: 0;
   bottom: 0;
