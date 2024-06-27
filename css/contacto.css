@@ -83,6 +83,11 @@
   
     height: 5vh;
   }
+  .headerabout>a>img:hover {
+
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+    transition: transform 0.3s;
+  }
   
   
   #logo-button {
@@ -102,13 +107,8 @@
     /* Animación de rotación infinita */
     z-index: 1;
     transition: transform 0.3s ease;
-    background-color: rgba(255, 255, 255, 0.5);
-    /* Blanco semi-transparente */
-    border-radius: 50%;
-    /* Hace que el div sea un círculo */
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
-    /* Difuminar los bordes */
   
+    
   }
   
   #logo-button:hover img {
@@ -328,6 +328,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
+    margin-top: 5em;
 
 }
 

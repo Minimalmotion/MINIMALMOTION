@@ -25,6 +25,12 @@ img {
   cursor: pointer;
   /* Cambia el cursor a su estado original sobre cualquier enlace */
 }
+.headerabout>a>img:hover {
+
+  transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+  transition: transform 0.3s;
+}
+
 
 h1 {
   font-family: 'Dunbarlow', sans-serif;
