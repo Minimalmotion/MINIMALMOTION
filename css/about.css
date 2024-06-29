@@ -79,6 +79,9 @@ header {
 .headerabout>a>img {
 
   height: 5vh;
+    object-fit: contain;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 .headerabout>a>img:hover {
 
@@ -206,6 +209,8 @@ a {
   margin-top: 2em;
   margin-left: 2em;
   height: 130vh;
+  flex-direction: row;
+  flex-wrap: wrap;
 
 }
 

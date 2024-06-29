@@ -9,6 +9,7 @@ canvas { display: block; }
 
 video {
   height: auto;
+  width: 80vw;
 
 }
 body {
@@ -52,7 +53,7 @@ body {
 }
 
 header {
-  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%, rgba(255, 255, 255, 0) 60%);
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%, rgba(255, 255, 255, 0) 60%);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -77,6 +78,9 @@ header {
 
 .headerabout>a>img {
   height: 5vh;
+    object-fit: contain;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 #logo-button {
@@ -164,7 +168,6 @@ a {
 
 .tienda {
   display: flex;
-  height: 100vh;
   margin-top: 7em;
   justify-content: center;
 }
@@ -207,7 +210,9 @@ div>h1 {
 
 .vid {
   display: flex;
-  justify-content: flex-start;
+ align-items: flex-start;
+
+  
 }
 
 .product {
@@ -227,13 +232,13 @@ margin: 1em;
 
 
 .productsinmodal img { 
-  width: 400px; /* Cambiar tamaño del carrusel */
+  width: 300px; /* Cambiar tamaño del carrusel */
   height: auto;
   border-radius: 10px;
  
 }
 .product img { 
-  width: 400px; /* Cambiar tamaño del carrusel */
+  width: 300px; /* Cambiar tamaño del carrusel */
   height: auto;
   border-radius: 10px;
  
@@ -489,9 +494,8 @@ font-size: 1em;
 #cart {
   position: fixed;
   top: 40em;
-  left: 50em;
   padding: 5em;
-  background-color: rgba(0, 0, 0, 0.589);
+  background-color: rgba(0, 0, 0, 0.90);
   color: white;
   border-radius: 10px;
   display: none;
@@ -560,3 +564,4 @@ font-size: 1em;
    
  
 }
+

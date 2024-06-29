@@ -60,7 +60,7 @@ body {
 }
 
 header {
-  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%, rgba(255, 255, 255, 0) 60%);
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%, rgba(255, 255, 255, 0) 60%);
   position: -webkit-sticky;
   /* Soporte para Safari */
   position: sticky;
@@ -90,6 +90,9 @@ header {
 
 .headerabout>a>img {
   height: 5vh;
+    object-fit: contain;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 
@@ -180,8 +183,10 @@ a {
 }
 .txtproyectos{
   display: flex;
-  justify-content: center;
-  margin-top: 8em;
+    justify-content: center;
+    margin-top: 10em;
+    flex-direction: column;
+    align-items: center;
 }
 
 .mt-5, .my-5 {

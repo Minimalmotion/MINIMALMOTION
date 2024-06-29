@@ -80,8 +80,10 @@
   }
   
   .headerabout>a>img {
-  
     height: 5vh;
+    object-fit: contain;
+    padding-left: 2em;
+    padding-right: 2em;
   }
   .headerabout>a>img:hover {
 
@@ -328,7 +330,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
-    margin-top: 5em;
+    margin-top: 15em;
 
 }
 

@@ -84,6 +84,9 @@
   .headerabout>a>img {
   
     height: 5vh;
+    object-fit: contain;
+    padding-left: 2em;
+    padding-right: 2em;
   }
   
   
