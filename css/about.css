@@ -187,6 +187,8 @@ a {
   flex-direction: column;
   justify-content: center;
   height: 70vh;
+  padding-right: 2em;
+    padding-left: 2em;
 }
 
 #videoabout {
@@ -205,7 +207,8 @@ a {
 
 .info {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
   margin-top: 2em;
   margin-left: 2em;
   height: 130vh;
@@ -216,8 +219,9 @@ a {
 
 .txtinfo {
   margin: 3em;
-  width: 35vw;
   overflow-wrap: break-word;
+  flex: 1;
+
   /* Permite que el texto se ajuste dentro del contenedor */
 }
 
@@ -226,9 +230,7 @@ a {
     color: rgb(0, 0, 0); /* Aplica el estilo que desees */
 }
 
-.info>video {
-  height: 80vh;
-}
+
 
 /* BOOTSTRAP */
 
@@ -269,6 +271,7 @@ footer{
   flex-direction: column;
   align-items: center;
   cursor: url('/img/cursorblanco.png'), auto;
+  margin-top: 2em;
 }
 .footer{
   cursor: url('/img/cursorblanco.png'), auto;
@@ -309,6 +312,8 @@ footer>h1{
 li{
   display: flex;
   cursor: url('/img/cursorblanco.png'), auto;
+  flex-direction: row;
+    flex-wrap: wrap;
   
 }
 li>u{
@@ -324,3 +329,47 @@ align-items: baseline;
 margin: 1em;
 font-size: 1em;
 }
+
+
+.info video {
+  max-width: 100%; 
+  margin-bottom: 20px; 
+}
+
+
+
+
+@media (max-width: 1350px) {
+  .info video {
+    max-width: 50%;
+  }
+}
+@media (max-width: 800px) {
+ .info{
+  flex-direction: column;
+  align-items: center;
+ }
+}
+@media (max-width: 480px) {
+  .headerabout {
+    padding: 0 10px; /* Espaciado interno reducido */
+  }
+ 
+ 
+  .txtinfo>h3 {
+    font-size: 0.99rem;
+  }
+}
+@media (max-width: 268px) {
+  .headerabout {
+    padding: 0 10px;
+  }
+ 
+ .quienessomos{
+  font-size: 0.7rem;
+ }
+  .txtinfo>h3 {
+    font-size: 0.8rem;
+  }
+}
+

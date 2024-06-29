@@ -308,6 +308,8 @@
   li{
     display: flex;
     cursor: url('/img/cursorblanco.png'), auto;
+    flex-direction: row;
+    flex-wrap: wrap;
     
   }
   li>u{
@@ -331,6 +333,8 @@
     width: 100%;
     max-width: 400px;
     margin-top: 15em;
+    padding-right: 2em;
+    padding-left: 2em;
 
 }
 

@@ -425,6 +425,8 @@ footer>h1{
 li{
   display: flex;
   cursor: url('/img/cursorblanco.png'), auto;
+  flex-direction: row;
+    flex-wrap: wrap;
   
 }
 li>u{
