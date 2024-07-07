@@ -342,6 +342,7 @@ font-size: 1em;
 @media (max-width: 1350px) {
   .info video {
     max-width: 50%;
+    overflow-x: hidden;
   }
 }
 @media (max-width: 800px) {
