@@ -361,6 +361,11 @@ font-size: 1em;
     font-size: 0.99rem;
   }
 }
+@media (max-width: 308px) {
+  .info {
+    flex-wrap: nowrap ;
+}
+}
 @media (max-width: 268px) {
   .headerabout {
     padding: 0 10px;
