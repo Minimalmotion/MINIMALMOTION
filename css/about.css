@@ -362,8 +362,10 @@ font-size: 1em;
   }
 }
 @media (max-width: 308px) {
-  .info {
-    flex-wrap: nowrap ;
+  .txtinfo {
+    margin: 0;
+    overflow-wrap: break-word;
+    flex: 1;
 }
 }
 @media (max-width: 268px) {
