@@ -353,12 +353,20 @@ margin: 1em;
   position: relative;
   width: 80%;
   max-width: 800px; /* Ajusta el ancho máximo del contenido del modal */
- 
+ top: 2%;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
 }
 
+.close-button {
+  position: absolute;
+ top: 5px;
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+  z-index: 1000;
+}
 
 .carousel {
   width: 100%;
@@ -574,6 +582,31 @@ span{
   color: #fff;
 }
 
+
+
+
+@media (max-width: 800px) {
+  .modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+video {
+  height: 70vh;
+  /* width: 100vw; */
+  resize: 2em;
+  object-fit: cover;
+}
+}
+@media (max-width: 500px) {
+  .modal-content {
+    top: 2em;
+}
+}
 @media (max-width: 420px) {
   #cart{
     bottom: 0em;

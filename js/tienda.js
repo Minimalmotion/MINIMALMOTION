@@ -161,6 +161,14 @@ $(document).ready(function(){
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
         });
-      } // End if
+      } 
     });
+    // Cerrar el modal al hacer clic en el botón de cierre
+const closeButtons = document.querySelectorAll('.close-button');
+closeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        button.closest('.modal').style.display = 'none'; // Cerrar el modal
+    });
+});
+
   });
