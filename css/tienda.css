@@ -573,3 +573,9 @@ font-size: 1em;
 span{
   color: #fff;
 }
+
+@media (max-width: 420px) {
+  #cart{
+    bottom: 0em;
+  }
+}

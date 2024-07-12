@@ -373,3 +373,9 @@ button:hover {
 main{
   background-color: #000000;
 }
+
+@media (max-width: 420px) {
+ footer>h1{
+  font-size: 1em;
+ }
+}
