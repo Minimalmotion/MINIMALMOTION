@@ -1,5 +1,5 @@
 * {
-  color: rgb(0, 0, 0);
+ 
   font-family: 'Dunbarlow', sans-serif;
   cursor: url('/img/cursor.png'), auto;
   /* Aquí se añade el cursor personalizado */
@@ -10,6 +10,8 @@
 
 a {
   cursor: pointer;
+  text-decoration: none;
+  color: white
   /* Cambia el cursor a su estado original sobre cualquier enlace */
 }
 
@@ -31,6 +33,9 @@ h3 {
   font-family: "ABeeZee", sans-serif;
   font-weight: 50;
   font-size: 1.2rem;
+}
+h5{
+  color: #fff;
 }
 
 
@@ -234,7 +239,8 @@ a {
 
 /* BOOTSTRAP */
 
-.btn-primary {
+.btn {
+  margin-top: 2em;
   --bs-btn-color: #fff;
   --bs-btn-bg: #000000;
   --bs-btn-border-color: #000000;
@@ -336,6 +342,9 @@ font-size: 1em;
   margin-bottom: 20px; 
 }
 
+span{
+  color: #fff;
+}
 
 
 

@@ -442,4 +442,6 @@ align-items: baseline;
 margin: 1em;
 font-size: 1em;
 }
-
+span{
+  color: #fff;
+}

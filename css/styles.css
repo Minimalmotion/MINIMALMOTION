@@ -16,9 +16,7 @@ header{
     width: 100vw;
     font-weight: bold;
 }
-header>img{
-  size: 5em;
-}
+
 
 .homecontainer{
 display: flex;
@@ -27,13 +25,9 @@ align-items: center;
 height: 100vh;
 
 }
-.home:hover{
-  transform: scale(10.2) ease; /* Agranda el logo al hacer hover */
-  animation-play-state: paused; /* Pausar la animación cuando se hace hover */
-  
-}
+
 .home{
-  transition: transform 0.5s ease; /* Transición suave para la rotación */
+  transition: transform 0.5s; /* Transición suave para la rotación */
   animation: rotate 3s linear infinite; /* Animación de rotación infinita */
 position: fixed;
 z-index: 1;
@@ -42,6 +36,12 @@ z-index: 1;
 }
 .home>a>img{
   height: 20vh; 
+}
+.home>a>img:hover{
+  transform: scale(1.5); /* Agranda el logo al hacer hover */
+  animation-play-state: paused; /* Pausar la animación cuando se hace hover */
+  transition: transform 0.3s;
+  
 }
 
 
@@ -56,6 +56,7 @@ z-index: 1;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  opacity: 70%;
 }
 
 
