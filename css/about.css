@@ -354,10 +354,17 @@ span{
     overflow-x: hidden;
   }
 }
+@media (max-width: 1000px) {
+  .txtinfo{
+    font-size: 0.5em;
+  }
+}
 @media (max-width: 800px) {
  .info{
   flex-direction: column;
   align-items: center;
+  flex-wrap: nowrap;
+  
  }
 }
 @media (max-width: 480px) {
