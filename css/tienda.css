@@ -39,7 +39,10 @@ h3 {
   font-weight: 50;
   font-size: 1.2rem;
 }
-
+h6{
+  padding: 2em;
+  opacity: 50%;
+}
 /* MENU Y HEADER */
 
 h1 {
@@ -495,7 +498,7 @@ font-size: 1em;
 
 #cart {
   position: fixed;
-  top: 40em;
+  bottom: 20em;
   padding: 5em;
   background-color: rgba(0, 0, 0, 0.90);
   color: white;

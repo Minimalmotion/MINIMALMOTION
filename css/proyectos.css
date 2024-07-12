@@ -357,11 +357,7 @@ p{
 }
 
 
-@media (min-width: 500px) {
-  .modal-lg, .modal-xl {
-      max-width: 400px;
-  }
-}
+
 
 
 /* FOOTER */
@@ -444,4 +440,11 @@ font-size: 1em;
 }
 span{
   color: #fff;
+}
+
+
+@media (min-width: 500px) {
+  .modal-lg, .modal-xl {
+      max-width: 400px;
+  }
 }
