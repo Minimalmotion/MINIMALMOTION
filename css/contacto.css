@@ -173,9 +173,7 @@
   
   .container1 {
     margin: 0%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   
     height: 3em;
   }
   
@@ -265,7 +263,6 @@
     flex-direction: column;
     align-items: center;
     cursor: url('/img/cursorblanco.png'), auto;
-    height: 100vh;
   }
   .footer{
     cursor: url('/img/cursorblanco.png'), auto;
@@ -332,9 +329,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
-    margin-top: 15em;
-    padding-right: 2em;
-    padding-left: 2em;
+    margin-top: 8em;
 
 }
 
