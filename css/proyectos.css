@@ -34,6 +34,7 @@ img {
 
 h1 {
   font-family: 'Dunbarlow', sans-serif;
+  margin: 2em;
 }
 
 h2 {
@@ -380,6 +381,7 @@ footer{
   flex-direction: column;
   align-items: center;
   cursor: url('/img/cursorblanco.png'), auto;
+  margin-top: 10em;
   
 }
 .footer{

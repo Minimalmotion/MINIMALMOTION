@@ -39,6 +39,7 @@
   h1 {
     font-weight: bolder;
     font-size: 5em;
+    text-align: center;
   }
   .headerabout>a>img:hover {
 
@@ -186,7 +187,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 70vh;
+   
   }
   
   #videoabout {
@@ -196,25 +197,32 @@
     object-fit: cover;
     min-height: 25vh;
   }
+  .case:hover {
+    cursor: url('/img/cursorblanco.png'), auto;
+  }
   
   /* INFO */
   
   .quienessomos {
-    margin-top: 0em;
+    margin-top: 10em;
+  
   }
   
   .info {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
     margin-top: 2em;
     margin-left: 2em;
-    height: 130vh;
+ 
+    
   
   }
   
   .txtinfo {
     margin: 3em;
-    width: 35vw;
+    margin-top: 10em;
+    width: 80vw;
     overflow-wrap: break-word;
     /* Permite que el texto se ajuste dentro del contenedor */
   }
@@ -224,28 +232,15 @@
       color: rgb(0, 0, 0); /* Aplica el estilo que desees */
   }
   
-  .info>video {
-    height: 80vh;
+  .info>img {
+    width: 100vw;
+    position: relative;
+    top: 4em;
+    object-fit: contain;
+    max-height: 50vh;
   }
   
-  /* BOOTSTRAP */
   
-  .btn-primary {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #000000;
-    --bs-btn-border-color: #000000;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #a9a9a9;
-    --bs-btn-hover-border-color: #000000;
-    --bs-btn-focus-shadow-rgb: 49, 132, 253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #000000;
-    --bs-btn-active-border-color: #0a53be;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #000000;
-    --bs-btn-disabled-border-color: #000000;
-  }
   
   /* FOOTER */
   
@@ -267,9 +262,11 @@
     flex-direction: column;
     align-items: center;
     cursor: url('/img/cursorblanco.png'), auto;
+   
   }
   .footer{
     cursor: url('/img/cursorblanco.png'), auto;
+    
   }
   .footer>li{
     cursor: url('/img/cursorblanco.png'), auto;
@@ -302,7 +299,7 @@
     color: #ffffff;
     font-size: 2em;
     margin: 1em;
-    margin-top: 2em;
+    margin-top: 5em;
   }
   li{
     display: flex;
@@ -324,3 +321,39 @@
   margin: 1em;
   font-size: 1em;
   }
+  .case{
+    width: 100vw;
+    position: relative;
+    top: 4em;
+    object-fit: cover;
+    min-height: 25vh;
+  }
+
+
+  @media (max-width: 744px) {
+    .headerabout {
+      padding: 0 10px;
+    }
+   
+   
+   .quienessomos>h1{
+    font-size: 2rem;
+   }
+    
+  }
+  @media (max-width: 268px) {
+    .headerabout {
+      padding: 0 10px;
+    }
+   
+   .quienessomos{
+    font-size: 0.7rem;
+   }
+   .quienessomos>h1{
+    font-size: 0.8rem;
+   }
+    .txtinfo>h3 {
+      font-size: 0.8rem;
+    }
+  }
+  

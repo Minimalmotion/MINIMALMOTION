@@ -251,6 +251,7 @@
     max-width: 100vw;
     justify-content: space-between;
     padding-bottom: 8em;
+    
   
   }
   
@@ -263,6 +264,7 @@
     flex-direction: column;
     align-items: center;
     cursor: url('/img/cursorblanco.png'), auto;
+    
   }
   .footer{
     cursor: url('/img/cursorblanco.png'), auto;
