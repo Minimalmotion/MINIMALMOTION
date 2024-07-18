@@ -273,6 +273,10 @@
   .footer>li{
     cursor: url('/img/cursorblanco.png'), auto;
   }
+  span{
+    color: #fff;
+    text-decoration: none;
+  }
   footer>img{
     margin-top: 3em;
     padding-top: 0em;

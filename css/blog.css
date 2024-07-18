@@ -10,6 +10,8 @@
   
   a {
     cursor: pointer;
+    text-decoration: none;
+    color: white
     /* Cambia el cursor a su estado original sobre cualquier enlace */
   }
   
@@ -261,6 +263,7 @@
     flex-direction: column;
     align-items: center;
     cursor: url('/img/cursorblanco.png'), auto;
+    padding-bottom: 8em;
    
   }
   .footer{
@@ -327,7 +330,9 @@
     object-fit: cover;
     min-height: 25vh;
   }
-
+span{
+  color: #ffffff;
+}
 
   @media (max-width: 744px) {
     .headerabout {

@@ -18,7 +18,14 @@ body {
 }
 
 a {
+  display: inline-block;
   cursor: pointer;
+  text-decoration: none;
+  color: white
+  /* Cambia el cursor a su estado original sobre cualquier enlace */
+}
+u{
+  text-decoration: none;
 }
 
 img {
@@ -116,9 +123,7 @@ header {
   }
 }
 
-a {
-  display: inline-block;
-}
+
 
 .menu {
   display: flex;
@@ -442,6 +447,7 @@ footer{
   flex-direction: column;
   align-items: center;
   cursor: url('/img/cursorblanco.png'), auto;
+  padding-bottom: 8em;
 }
 .footer{
   cursor: url('/img/cursorblanco.png'), auto;

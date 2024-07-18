@@ -18,6 +18,8 @@ body{
 
 a {
   cursor: pointer;
+  text-decoration: none;
+  color: white
   /* Cambia el cursor a su estado original sobre cualquier enlace */
 }
 
@@ -382,6 +384,7 @@ footer{
   align-items: center;
   cursor: url('/img/cursorblanco.png'), auto;
   margin-top: 10em;
+  padding-bottom: 8em;
   
 }
 .footer{

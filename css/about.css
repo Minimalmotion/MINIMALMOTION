@@ -287,6 +287,7 @@ footer{
   align-items: center;
   cursor: url('/img/cursorblanco.png'), auto;
   margin-top: 2em;
+  padding-bottom: 8em;
 }
 .footer{
   cursor: url('/img/cursorblanco.png'), auto;
